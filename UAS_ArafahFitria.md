@@ -29,6 +29,19 @@ sudo lxc-create -n lxc_php7_1 -t download -- --dist ubuntu --release focal --arc
 ![2](https://user-images.githubusercontent.com/92453574/151706324-62b4279e-76b2-4f40-950e-913862a6a6db.png)
 
 2.	File /app/handlers/main.yml
+```
+- name: restart nginx
+  become: yes
+  become_user: root
+  become_method: su
+  action: service name=nginx state=restarted
+  
+- name: restart php
+  become: yes
+  become_user: root
+  become_method: su
+  action: service name=php5.6-fpm state=restarted
+```
 ![3](https://user-images.githubusercontent.com/92453574/151706326-7f0b4fce-acf0-44ba-aa4c-1851ade29f4e.png)
 
 3.	File /app/tasks/main.yml
