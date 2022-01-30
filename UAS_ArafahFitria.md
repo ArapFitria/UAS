@@ -315,18 +315,22 @@ server {
 
 **WORDPRESS**
 1.	Install wp
+
 ![15](https://user-images.githubusercontent.com/92453574/151706709-b9cc0b53-ed1f-4370-a95e-2ae06a82aa8d.png)
 
 
 3.	Wp.conf
+
 ![16](https://user-images.githubusercontent.com/92453574/151706711-940b8cbb-26d7-4b34-9fa6-16932ef09896.png)
 
 
 3.	Wordpress.conf
+
 ![17](https://user-images.githubusercontent.com/92453574/151706712-930cb440-d615-4af0-a51b-7d12c47efb2b.png)
 
 
 4.	Hasil WordPress
+
 ![18](https://user-images.githubusercontent.com/92453574/151706713-4dd0f276-9364-4af5-814a-a6807e183525.png)
 
 
