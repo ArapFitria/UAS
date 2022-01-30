@@ -6,5 +6,8 @@ Fitria Rahma Wulandari (1202190045)
 
 ---
 
-
+•	Install LXC atau containers sesuai kebutuhan. Setting IP sehingga tidak ada yang sama
+``
+nsksk
+``
 
