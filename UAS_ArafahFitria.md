@@ -331,8 +331,18 @@ server {
 
 
 
-**LXC DATABASE**
+**DATABASE**
 1.	Database
+```
+- hosts: LXC_DB_SERVER
+  vars:
+    username: 'arafah'
+    password: '1234'
+    domain: 'lxc_DB_SERVER.dev'
+  roles:
+    - db
+    - pma
+```
 ![19](https://user-images.githubusercontent.com/92453574/151706880-d84aebb0-065c-485d-927b-b33ba113b4e7.png)
 
 
@@ -341,10 +351,67 @@ server {
 
 
 5.	Role/pma/handlers/main.yml
+```
+---
+- name: stop apache2
+  become: yes
+  become_user: root
+  become_method: su
+  action: service name=apache2 state=stopped
+
+- name: restart nginx
+  become: yes
+  become_user: root
+  become_method: su
+  action: service name=nginx state=restarted
+
+- name: restart php
+  become: yes
+  become_user: root
+  become_method: su
+  action: service name=php7.2-fpm state=restarted
+```
 ![21](https://user-images.githubusercontent.com/92453574/151706884-85326f7d-add9-43d6-90cc-e8aa9d2ce634.png)
 
 
 7.	Role/pma/templates/pm.local
+```
+server {
+    listen 80;
+
+      server_name {{servername}};
+
+      root /usr/share/phpmyadmin;
+
+      index index.php;
+
+      location / {
+
+           try_files $uri $uri/ @phpmyadmin;
+
+      }
+      location @phpmyadmin {
+              fastcgi_pass unix:/run/php/php7.2-fpm.sock;   #Sesuaikan dengan versi PHP
+
+              fastcgi_param SCRIPT_FILENAME /usr/share/phpmyadmin/index.php;
+
+              include /etc/nginx/fastcgi_params;
+
+              fastcgi_param SCRIPT_NAME /index.php;
+      }
+      location ~ \.php$ {
+
+              fastcgi_pass unix:/run/php/php7.2-fpm.sock;  #Sesuaikan dengan versi PHP
+
+              fastcgi_index index.php;
+
+              fastcgi_param SCRIPT_FILENAME /usr/share/phpmyadmin$fastcgi_script_name;
+
+              include fastcgi_params;
+
+      }
+}
+```
 ![22](https://user-images.githubusercontent.com/92453574/151706885-dc434773-afa4-4e06-b3e5-89105f7a1efd.png)
 
 
