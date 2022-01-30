@@ -15,6 +15,17 @@ sudo lxc-create -n lxc_php7_1 -t download -- --dist ubuntu --release focal --arc
 
 •	Code Igniter
 1.	File deploy-app.yml
+```
+- hosts: ci
+  vars:
+    git_url: 'https://github.com/aldonesia/sas-ci'
+    destdir: '/var/www/html/ci'
+    domain: 'lxc_php5_1.dev'
+    domain: 'lxc_php5_2.dev'
+  roles:
+    - app
+```
+
 ![2](https://user-images.githubusercontent.com/92453574/151706324-62b4279e-76b2-4f40-950e-913862a6a6db.png)
 
 2.	File /app/handlers/main.yml
