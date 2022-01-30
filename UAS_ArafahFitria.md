@@ -67,5 +67,41 @@ sudo lxc-create -n lxc_php7_1 -t download -- --dist ubuntu --release focal --arc
 ![14](https://user-images.githubusercontent.com/92453574/151706565-99b0d4a2-a914-4c04-bafd-442cdee53a1f.png)
 
 
+**WORDPRESS**
+1.	Install wp
+![15](https://user-images.githubusercontent.com/92453574/151706709-b9cc0b53-ed1f-4370-a95e-2ae06a82aa8d.png)
 
+
+3.	Wp.conf
+![16](https://user-images.githubusercontent.com/92453574/151706711-940b8cbb-26d7-4b34-9fa6-16932ef09896.png)
+
+
+3.	Wordpress.conf
+![17](https://user-images.githubusercontent.com/92453574/151706712-930cb440-d615-4af0-a51b-7d12c47efb2b.png)
+
+
+4.	Hasil WordPress
+![18](https://user-images.githubusercontent.com/92453574/151706713-4dd0f276-9364-4af5-814a-a6807e183525.png)
+
+
+
+**LXC DATABASE**
+1.	Database
+![19](https://user-images.githubusercontent.com/92453574/151706880-d84aebb0-065c-485d-927b-b33ba113b4e7.png)
+
+
+3.	Role/pma/tasks/main.yml
+![20](https://user-images.githubusercontent.com/92453574/151706881-72ee056c-9524-4fd8-ab3b-0c505b58234e.png)
+
+
+5.	Role/pma/handlers/main.yml
+![21](https://user-images.githubusercontent.com/92453574/151706884-85326f7d-add9-43d6-90cc-e8aa9d2ce634.png)
+
+
+7.	Role/pma/templates/pm.local
+![22](https://user-images.githubusercontent.com/92453574/151706885-dc434773-afa4-4e06-b3e5-89105f7a1efd.png)
+
+
+5.	Hasil Server
+![23](https://user-images.githubusercontent.com/92453574/151706886-913bd378-0c71-446d-95d1-a0ac56c80bfe.png)
 
