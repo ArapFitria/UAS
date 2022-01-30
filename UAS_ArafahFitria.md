@@ -33,3 +33,39 @@ sudo lxc-create -n lxc_php7_1 -t download -- --dist ubuntu --release focal --arc
 ![6](https://user-images.githubusercontent.com/92453574/151706321-fcd6696b-c0d2-40f5-8c9c-a7c488c117a9.png)
 
 
+
+**LARAVEL**
+1.	Set domain Laravel
+![7](https://user-images.githubusercontent.com/92453574/151706553-bc5a209b-f827-4d98-892a-d9f5afa47ad1.png)
+
+
+2.	role/php/tasks/main.yml
+![8](https://user-images.githubusercontent.com/92453574/151706555-22c310d0-28e7-4568-a630-a55c57f6bec6.png)
+
+
+3.	role/php/handlres/main.yml
+![9](https://user-images.githubusercontent.com/92453574/151706556-3942baad-af31-4152-8ece-15c27a21d7a9.png)
+
+
+4.	role/lv/handlers/main.yml
+![10](https://user-images.githubusercontent.com/92453574/151706558-73f98f77-7eb4-4c85-9a2e-1bd322236887.png)
+
+
+5.	role/lv/tasks/main.yml
+![11](https://user-images.githubusercontent.com/92453574/151706559-b6d44318-13cc-4745-af13-04cc97db6834.png)
+
+
+6.	role/lv/templates/env.templates
+![12](https://user-images.githubusercontent.com/92453574/151706562-32fe8f41-1cb6-4d63-a052-10fe6b999c82.png)
+
+
+7.	role/lv/templates/lv.conf
+![13](https://user-images.githubusercontent.com/92453574/151706564-dea6daf8-56c5-45d9-8943-308023bc37e8.png)
+
+
+8.	hasil Laravel
+![14](https://user-images.githubusercontent.com/92453574/151706565-99b0d4a2-a914-4c04-bafd-442cdee53a1f.png)
+
+
+
+
