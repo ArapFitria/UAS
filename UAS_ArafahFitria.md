@@ -2406,3 +2406,77 @@ Fitria Rahma Wulandari (1202190045)
 500 user scheme
 ![WhatsApp Image 2022-02-02 at 12 52 29](https://user-images.githubusercontent.com/92453574/152100404-0745be98-2487-49e0-a15f-61c67c7c0a0b.jpeg)
 
+---
+analisa
+
+- rata-rata troughput
+
+50
+landing = 31,2
+app=34,4
+pro=37,3
+news=26,3
+
+150
+landing = 37,2
+app= 39,9
+pro=39,7
+news=26,2
+
+
+300
+landing = 35,4
+app= 37,3
+pro= 37,1
+news= 24,1
+
+
+500
+landing = 50,1
+app=52,9
+pro=22
+news=100
+
+- rata-rata jumlah user yang dilayani per detik 
+
+50 user
+landing = 863
+app=13
+pro=30
+news=979
+
+
+150 user
+landing = 2014
+app=3
+pro=19
+news=2899
+
+
+300 user
+landing = 4189
+app=4
+pro=21
+news=6211
+
+
+500 user
+landing =4058
+app=38
+pro=61
+news=5411
+
+Untuk meningkatkan jumlah user pada layanan web server dapat dilakukan dengan beberapa hal yaitu :
+
+1. server
+- meningkatkan atau mengupdate hardware dengan peforma tinggi
+- menambah container baru pada load balancer
+- mengupdate sistem operasi yang terbaru secara berkala
+- Menghapus layanan yang tidak perlu
+- optimasi database
+- meningkatkan kualitas atau kecepatan jaringan internet
+
+2. website
+- menghapus plugin yang tidak perlu
+- optimasi gambar
+- menggunakan plugin caching
