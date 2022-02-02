@@ -1801,8 +1801,8 @@ Fitria Rahma Wulandari (1202190045)
       * @package WordPress
       */
      
-     define( 'WP_HOME', 'http://news.kelompok12.fpsas' );
-     define( 'WP_SITEURL', 'http://news.kelompok12.fpsas' );
+     define( 'WP_HOME', 'http://news.kelompok3.fpsas' );
+     define( 'WP_SITEURL', 'http://news.kelompok3.fpsas' );
      
      // ** MySQL settings - You can get this info from your web host ** //
      /** The name of the database for WordPress */
