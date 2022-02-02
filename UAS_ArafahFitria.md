@@ -14,6 +14,9 @@ Fitria Rahma Wulandari (1202190045)
 
 - buat folder di direktori ansibel sudo `mkdir -p ~/ansible/tubes`
 
+  ![lxc](https://user-images.githubusercontent.com/92453574/152085884-a16c213c-a85b-4e16-b07f-391250e1245e.jpeg)
+  ![ansible](https://user-images.githubusercontent.com/92453574/152085834-30bf5a41-4002-4977-8e48-4b49b90bd764.jpeg)
+
 - buat roles directory untuk menampung skript yang akan diinstall
 
 - buat direktori laravel untuk menginstall laravel framework `sudo mkdir laravel`
@@ -136,14 +139,14 @@ Fitria Rahma Wulandari (1202190045)
      APP_ENV=local
      APP_KEY=
      APP_DEBUG=true
-     APP_URL=http://kelompok12.fpsas
+     APP_URL=http://kelompok3.fpsas
      
      LOG_CHANNEL=stack
      LOG_DEPRECATIONS_CHANNEL=null
      LOG_LEVEL=debug
      
      DB_CONNECTION=mysql
-     DB_HOST=10.0.3.100
+     DB_HOST=10.0.3.131
      DB_PORT=3306
      DB_DATABASE=landing
      DB_USERNAME=admin
@@ -1806,10 +1809,10 @@ Fitria Rahma Wulandari (1202190045)
      define( 'DB_NAME', 'blog' );
      
      /** MySQL database username */
-     define( 'DB_USER', 'admin' );
+     define( 'DB_USER', 'arafah' );
      
      /** MySQL database password */
-     define( 'DB_PASSWORD', 'admin' );
+     define( 'DB_PASSWORD', '1234' );
      
      /** MySQL hostname */
      define( 'DB_HOST', '10.0.3.100:3306' );
@@ -2038,34 +2041,34 @@ Fitria Rahma Wulandari (1202190045)
 
   ```
   [laravel]
-  laravel ansible_host=lxc_laravel.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_1L ansible_host=lxc_php7_1L.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_2L ansible_host=lxc_php7_2L.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_4L ansible_host=lxc_php7_4L.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_6L ansible_host=lxc_php7_6L.dev ansible_ssh_user=root ansible_become_pass=akbar
+  laravel ansible_host=lxc_laravel.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_1L ansible_host=lxc_php7_1L.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_2L ansible_host=lxc_php7_2L.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_4L ansible_host=lxc_php7_4L.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_6L ansible_host=lxc_php7_6L.dev ansible_ssh_user=arafah ansible_become_pass=1234
   
   [codeigniter]
-  codeigniter ansible_host=lxc_codeigniter.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php5_1 ansible_host=lxc_php5_1.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php5_2 ansible_host=lxc_php5_2.dev ansible_ssh_user=root ansible_become_pass=akbar
+  codeigniter ansible_host=lxc_codeigniter.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php5_1 ansible_host=lxc_php5_1.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php5_2 ansible_host=lxc_php5_2.dev ansible_ssh_user=arafah ansible_become_pass=1234
   
   [wordpress]
-  wordpress ansible_host=lxc_wordpress.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_2W ansible_host=lxc_php7_2W.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_3W ansible_host=lxc_php7_3W.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_4W ansible_host=lxc_php7_4W.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_5W ansible_host=lxc_php7_5W.dev ansible_ssh_user=root ansible_become_pass=akbar
+  wordpress ansible_host=lxc_wordpress.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_2W ansible_host=lxc_php7_2W.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_3W ansible_host=lxc_php7_3W.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_4W ansible_host=lxc_php7_4W.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_5W ansible_host=lxc_php7_5W.dev ansible_ssh_user=arafah ansible_become_pass=1234
   
   [yii]
-  yii ansible_host=lxc_yii.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_1Y ansible_host=lxc_php7_1Y.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_2Y ansible_host=lxc_php7_2Y.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_4Y ansible_host=lxc_php7_4Y.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_5Y ansible_host=lxc_php7_5Y.dev ansible_ssh_user=root ansible_become_pass=akbar
-  lxc_php7_6Y ansible_host=lxc_php7_6Y.dev ansible_ssh_user=root ansible_become_pass=akbar
+  yii ansible_host=lxc_yii.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_1Y ansible_host=lxc_php7_1Y.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_2Y ansible_host=lxc_php7_2Y.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_4Y ansible_host=lxc_php7_4Y.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_5Y ansible_host=lxc_php7_5Y.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_6Y ansible_host=lxc_php7_6Y.dev ansible_ssh_user=arafah ansible_become_pass=1234
   
   [database]
-  lxc_mariadb ansible_host=lxc_mariadb.dev ansible_ssh_user=root ansible_become_pass=akbar
+  lxc_mariadb ansible_host=lxc_mariadb.dev ansible_ssh_user=arafah ansible_become_pass=1234
   ```
 
   
@@ -2107,8 +2110,8 @@ Fitria Rahma Wulandari (1202190045)
   ---
   - hosts: laravel
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_laravel.dev'
     roles:
       - php
@@ -2116,8 +2119,8 @@ Fitria Rahma Wulandari (1202190045)
   
   - hosts: lxc_php7_1L
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_1L.dev'
     roles:
       - php
@@ -2125,8 +2128,8 @@ Fitria Rahma Wulandari (1202190045)
   
   - hosts: lxc_php7_2L
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_2L.dev'
     roles:
       - php
@@ -2134,8 +2137,8 @@ Fitria Rahma Wulandari (1202190045)
   
   - hosts: lxc_php7_4L
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_4L.dev'
     roles:
       - php
@@ -2143,8 +2146,8 @@ Fitria Rahma Wulandari (1202190045)
   
   - hosts: lxc_php7_6L
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_6L.dev'
     roles:
       - php
@@ -2158,8 +2161,8 @@ Fitria Rahma Wulandari (1202190045)
   ```
   - hosts: database
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_mariadb.dev'
     roles:
       - db
@@ -2174,40 +2177,40 @@ Fitria Rahma Wulandari (1202190045)
   ---
   - hosts: wordpress
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_wordpress.dev'
     roles:
       - wordpress
   
   - hosts: lxc_php7_2W
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_2W.dev'
     roles:
       - wordpress
   
   - hosts: lxc_php7_3W
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_3W.dev'
     roles:
       - wordpress
   
   - hosts: lxc_php7_4W
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_4W.dev'
     roles:
       - wordpress
   
   - hosts: lxc_php7_5W
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_5W.dev'
     roles:
       - wordpress
@@ -2221,8 +2224,8 @@ Fitria Rahma Wulandari (1202190045)
   ---
   - hosts: yii
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_yii.dev'
     roles:
       - php
@@ -2230,8 +2233,8 @@ Fitria Rahma Wulandari (1202190045)
   
   - hosts: lxc_php7_1Y
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_1Y.dev'
     roles:
       - php
@@ -2239,8 +2242,8 @@ Fitria Rahma Wulandari (1202190045)
   
   - hosts: lxc_php7_2Y
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_2Y.dev'
     roles:
       - php
@@ -2248,8 +2251,8 @@ Fitria Rahma Wulandari (1202190045)
   
   - hosts: lxc_php7_4Y
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_4Y.dev'
     roles:
       - php
@@ -2257,8 +2260,8 @@ Fitria Rahma Wulandari (1202190045)
   
   - hosts: lxc_php7_5Y
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_5Y.dev'
     roles:
       - php
@@ -2266,8 +2269,8 @@ Fitria Rahma Wulandari (1202190045)
   
   - hosts: lxc_php7_6Y
     vars:
-      username: 'admin'
-      password: 'admin'
+      username: 'arafah'
+      password: '1234'
       domain: 'lxc_php7_6Y.dev'
     roles:
       - php
@@ -2342,7 +2345,7 @@ Fitria Rahma Wulandari (1202190045)
           listen 80;
           listen [::]:80;
   
-          server_name news.kelompok12.fpsas;
+          server_name news.kelompok3.fpsas;
   
           root /var/www/html;
           index index.html;
@@ -2369,19 +2372,22 @@ Fitria Rahma Wulandari (1202190045)
 - cek konfigurasi pada web https://kelpmpok3.fpsas
 
 - laravel 
+  ![laravel](https://user-images.githubusercontent.com/92453574/152085871-3b915627-2ee9-41a6-8feb-4af190e65a84.jpeg)
 
-  
-
-  
 
 - wordpresss
 
   
 
 - codeigneter
+  ![codeigniter](https://user-images.githubusercontent.com/92453574/152085857-7d2aa73e-fe1e-42c5-9440-40a4c684d7da.jpeg)
+
 
 - yii
+  ![produck](https://user-images.githubusercontent.com/92453574/152085962-b2a5a851-c964-4cf5-97df-ffed6f612901.jpeg)
+
 
 - phpmyadmin
-
+  ![phpmyadmin](https://user-images.githubusercontent.com/92453574/152085945-5589a482-1aed-47bb-9075-a51fe6dbffc4.jpeg)
+  ![php](https://user-images.githubusercontent.com/92453574/152085896-b865084a-1e2e-4375-bd98-d1b5fde0f295.jpeg)
   
