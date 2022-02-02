@@ -2315,7 +2315,7 @@ Fitria Rahma Wulandari (1202190045)
           listen 80;
           listen [::]:80;
   
-          server_name kelompok12.fpsas;
+          server_name kelompok3.fpsas;
   
           root /var/www/html;
           index index.html;
