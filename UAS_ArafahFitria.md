@@ -2041,34 +2041,34 @@ Fitria Rahma Wulandari (1202190045)
 
   ```
   [laravel]
-  laravel ansible_host=lxc_laravel.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php7_1L ansible_host=lxc_php7_1L.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php7_2L ansible_host=lxc_php7_2L.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php7_4L ansible_host=lxc_php7_4L.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php7_6L ansible_host=lxc_php7_6L.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  laravel ansible_host=lxc_laravel.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_1L ansible_host=lxc_php7_1L.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_2L ansible_host=lxc_php7_2L.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_4L ansible_host=lxc_php7_4L.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_6L ansible_host=lxc_php7_6L.dev ansible_ssh_user=root ansible_become_pass=1234
   
   [codeigniter]
-  codeigniter ansible_host=lxc_codeigniter.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php5_1 ansible_host=lxc_php5_1.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php5_2 ansible_host=lxc_php5_2.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  codeigniter ansible_host=lxc_codeigniter.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php5_1 ansible_host=lxc_php5_1.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php5_2 ansible_host=lxc_php5_2.dev ansible_ssh_user=root ansible_become_pass=1234
   
   [wordpress]
-  wordpress ansible_host=lxc_wordpress.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php7_2W ansible_host=lxc_php7_2W.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php7_3W ansible_host=lxc_php7_3W.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php7_4W ansible_host=lxc_php7_4W.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php7_5W ansible_host=lxc_php7_5W.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  wordpress ansible_host=lxc_wordpress.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_2W ansible_host=lxc_php7_2W.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_3W ansible_host=lxc_php7_3W.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_4W ansible_host=lxc_php7_4W.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_5W ansible_host=lxc_php7_5W.dev ansible_ssh_user=root ansible_become_pass=1234
   
   [yii]
   yii ansible_host=lxc_yii.dev ansible_ssh_user=root ansible_become_pass=1234
-  lxc_php7_1Y ansible_host=lxc_php7_1Y.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php7_2Y ansible_host=lxc_php7_2Y.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php7_4Y ansible_host=lxc_php7_4Y.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php7_5Y ansible_host=lxc_php7_5Y.dev ansible_ssh_user=arafah ansible_become_pass=1234
-  lxc_php7_6Y ansible_host=lxc_php7_6Y.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_php7_1Y ansible_host=lxc_php7_1Y.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_2Y ansible_host=lxc_php7_2Y.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_4Y ansible_host=lxc_php7_4Y.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_5Y ansible_host=lxc_php7_5Y.dev ansible_ssh_user=root ansible_become_pass=1234
+  lxc_php7_6Y ansible_host=lxc_php7_6Y.dev ansible_ssh_user=root ansible_become_pass=1234
   
   [database]
-  lxc_mariadb ansible_host=lxc_mariadb.dev ansible_ssh_user=arafah ansible_become_pass=1234
+  lxc_mariadb ansible_host=lxc_mariadb.dev ansible_ssh_user=root ansible_become_pass=1234
   ```
 
   
