@@ -2411,60 +2411,97 @@ analisa
 
 - rata-rata troughput
 
-50
+50 user
+
 landing = 31,2
+
 app=34,4
+
 pro=37,3
+
 news=26,3
 
-150
+
+150 user
+
 landing = 37,2
+
 app= 39,9
+
 pro=39,7
+
 news=26,2
 
 
-300
+300 user
+
 landing = 35,4
+
 app= 37,3
+
 pro= 37,1
+
 news= 24,1
 
 
-500
+
+500 user
+
 landing = 50,1
+
 app=52,9
+
 pro=22
+
 news=100
+
 
 - rata-rata jumlah user yang dilayani per detik 
 
 50 user
+
 landing = 863
+
 app=13
+
 pro=30
+
 news=979
 
 
 150 user
+
 landing = 2014
+
 app=3
+
 pro=19
+
 news=2899
 
 
+
 300 user
+
 landing = 4189
+
 app=4
+
 pro=21
+
 news=6211
 
 
 500 user
+
 landing =4058
+
 app=38
+
 pro=61
+
 news=5411
+
 
 Untuk meningkatkan jumlah user pada layanan web server dapat dilakukan dengan beberapa hal yaitu :
 
